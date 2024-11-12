@@ -84,7 +84,7 @@ This is a simple Flask application that demonstrates how to perform CRUD (Create
 
 - **DELETE** `/users/{id}`: Delete a user by their ID.
 
-## Docker Commands
+<!-- ## Docker Commands
 
 - **Build Docker image**:
   ```bash
@@ -99,7 +99,7 @@ This is a simple Flask application that demonstrates how to perform CRUD (Create
 - **Setup Instructions**: Steps to get your application running locally.
 - **API Endpoints**: Details of the available REST API endpoints, including methods and sample JSON payloads.
 - **Docker Setup**: Instructions to build and run Docker containers for both Flask and MongoDB.
-- **License**: Information on the project license (if applicable).
+- **License**: Information on the project license (if applicable). -->
 
 
 
