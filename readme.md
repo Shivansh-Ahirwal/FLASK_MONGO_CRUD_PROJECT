@@ -32,13 +32,15 @@ This is a simple Flask application that demonstrates how to perform CRUD (Create
    ```bash
    git clone https://github.com/yourusername/your-repository.git
    cd your-repository
-Create a virtual environment and activate it:
+
+2. Create a virtual environment and activate it:
 
     ```bash
     Copy code
     python -m venv venv
     source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-2. Install the required packages:
+    
+3. Install the required packages:
 
     ```bash
     Copy code
@@ -46,14 +48,14 @@ Create a virtual environment and activate it:
     Docker Setup
     Ensure Docker is installed on your system.
 
-3. Build and run the Docker containers:
+4. Build and run the Docker containers:
 
     ```bash
     Copy code
     docker-compose up --build
     This will start both your Flask application and a MongoDB container.
 
-4. Running the Application
+5. Running the Application
     Once the application and MongoDB container are up and running, navigate to http://localhost:5000.
     You can interact with the API using Postman or any HTTP client.
     API Endpoints
