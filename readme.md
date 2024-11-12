@@ -36,14 +36,12 @@ This is a simple Flask application that demonstrates how to perform CRUD (Create
 2. Create a virtual environment and activate it:
 
     ```bash
-    Copy code
     python -m venv venv
     source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-    
+
 3. Install the required packages:
 
     ```bash
-    Copy code
     pip install -r requirements.txt
     Docker Setup
     Ensure Docker is installed on your system.
@@ -51,7 +49,6 @@ This is a simple Flask application that demonstrates how to perform CRUD (Create
 4. Build and run the Docker containers:
 
     ```bash
-    Copy code
     docker-compose up --build
     This will start both your Flask application and a MongoDB container.
 
@@ -104,7 +101,6 @@ This is a simple Flask application that demonstrates how to perform CRUD (Create
 - **Docker Setup**: Instructions to build and run Docker containers for both Flask and MongoDB.
 - **License**: Information on the project license (if applicable).
 
-Once you paste this into your `README.md` file, GitHub will render it in a well-structured format.
 
 
 
