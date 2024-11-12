@@ -34,76 +34,63 @@ This is a simple Flask application that demonstrates how to perform CRUD (Create
    cd your-repository
 Create a virtual environment and activate it:
 
-bash
-Copy code
-python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-Install the required packages:
+    ```bash
+    Copy code
+    python -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+2. Install the required packages:
 
-bash
-Copy code
-pip install -r requirements.txt
-Docker Setup
-Ensure Docker is installed on your system.
+    ```bash
+    Copy code
+    pip install -r requirements.txt
+    Docker Setup
+    Ensure Docker is installed on your system.
 
-Build and run the Docker containers:
+3. Build and run the Docker containers:
 
-bash
-Copy code
-docker-compose up --build
-This will start both your Flask application and a MongoDB container.
+    ```bash
+    Copy code
+    docker-compose up --build
+    This will start both your Flask application and a MongoDB container.
 
-Running the Application
-Once the application and MongoDB container are up and running, navigate to http://localhost:5000.
-You can interact with the API using Postman or any HTTP client.
-API Endpoints
-POST /users: Create a new user.
+4. Running the Application
+    Once the application and MongoDB container are up and running, navigate to http://localhost:5000.
+    You can interact with the API using Postman or any HTTP client.
+    API Endpoints
+    POST /users: Create a new user.
 
-Request Body (JSON):
-json
-Copy code
-{
-  "name": "John Doe",
-  "email": "john.doe@example.com",
-  "password": "password123"
-}
-GET /users: Retrieve a list of all users.
+- **POST** `/users`: Create a new user.
+  - **Request Body (JSON)**:
+    ```json
+    {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "password": "password123"
+    }
+    ```
 
-GET /users/{id}: Retrieve a user by their ID.
+- **GET** `/users`: Retrieve a list of all users.
 
-PUT /users/{id}: Update a user by their ID.
+- **GET** `/users/{id}`: Retrieve a user by their ID.
 
-Request Body (JSON):
-json
-Copy code
-{
-  "name": "John Updated",
-  "email": "john.updated@example.com",
-  "password": "newpassword123"
-}
-DELETE /users/{id}: Delete a user by their ID.
+- **PUT** `/users/{id}`: Update a user by their ID.
+  - **Request Body (JSON)**:
+    ```json
+    {
+      "name": "John Updated",
+      "email": "john.updated@example.com",
+      "password": "newpassword123"
+    }
+    ```
 
-Docker Commands
-Build Docker image:
+- **DELETE** `/users/{id}`: Delete a user by their ID.
 
-bash
-Copy code
-docker-compose build
-Run Docker containers:
+## Docker Commands
 
-bash
-Copy code
-docker-compose up
-Stop Docker containers:
+- **Build Docker image**:
+  ```bash
+  docker-compose build
 
-bash
-Copy code
-docker-compose down
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-markdown
-Copy code
 
 ### Explanation:
 
